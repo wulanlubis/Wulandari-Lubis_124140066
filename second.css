@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #bc3de7, #250543);
+  color: #ffffff;
+  line-height: 1.5;
+  padding-bottom:30px;
+}
+
+.navbar {
+  background: #633799;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 3px 10px rgba(141, 116, 223, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .logo {
+  font-size: 16px;
+  font-weight: bold;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.navbar ul li a:hover {
+  color: #f8f819;
+}
+
+
+.container {
+  background: rgba(211, 200, 200, 0.08);
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 85%;
+  box-shadow: 0 3px 15px rgba(21, 12, 12, 0.5);
+}
+
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile-pic img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px double #fffb0c;
+}
+.profile-info .highlight {
+  color: #ffeb3b;
+  font-weight: bold;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+table th, table td {
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: center;
+}
+table th {
+  background: #633799;
+}
+
+
+ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+ul li {
+  margin-bottom: 8px;
+}
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.gallery img {
+  width: 200px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.7);
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.skill-box {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.skill-box h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 2px solid #ffeb3b;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skill-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skill-box ul li {
+  margin-bottom: 8px;
+}
+
+.contact a {
+  color: #ffeb3b;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #633799;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
